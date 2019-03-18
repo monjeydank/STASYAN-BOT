@@ -69,9 +69,8 @@ async def on_message(message):
         embed.add_field(name='пока', value='Прощается с тобой', inline=False)
         await bot.send_message(message.channel, embed=embed)
 
-@bot.event
-async def on_ready():
-    await bot.change_presence(game=discord.Game(name='ящик'))
-
+   @bot.event
+   async def on_ready():
+   await bot.change_presence(game=discord.Game(name='ящик'))
 
 bot.run('NTU2MTIzNTY3MDIwOTY1OTE4.D26qIw.au9zREaQKewpWuoxxVWrgzeIi04')
